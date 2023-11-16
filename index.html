@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Online Event Ticket System demo">
+        <meta name="keywords" content="Online ticket event system">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Online Event Ticket System</title>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;display=swap" rel="stylesheet">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/main-style.css" type="text/css">
+        <style>
+            .header-section {
+    position: fixed;
+    width: 100%;
+    background-color: #fff; /* Change the background color as needed */
+    z-index: 1000; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+.header-section.scrolled  {
+    background-color: #717171; 
+    color: #fff;
+}
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6ac045; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #fff;
+  color: 
+  #6ac045;
+  border: 2px solid #6ac045;
+}
+
+        </style>
+    </head>
+    <body>
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+        <!-- Header Section Begin -->
+        <header class="header-section" >
+            <div class="container">
+                <div class="logo">
+                    <span style="font-size: larger; font-weight: 600;">Online Event Ticket System</span>
+                </div>
+                <div class="nav-menu">
+                    <nav class="mainmenu mobile-menu">
+                        <ul>
+                            <li class="active">
+                                <a href='index.html'>Home</a>
+                            </li>
+                            <li>
+                                <a href="#about-section">About</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sign UP</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href='#'>Login</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="event.html">View Events</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="event.html" class="primary-btn top-btn">
+                        <i class="fa fa-ticket"></i>
+                        Buy Your Ticket
+                    </a>
+                </div>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Hero Section Begin -->
+        <section class="hero-section set-bg" data-setbg="img/fun.jfif" style="background-color: rgba(0, 0, 0, 0.7); background-blend-mode: darken;">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-lg-7 mb-5">
+                        <div class="hero-text">
+                            <span style="color: #9FA6B2;">Buy Your Online Tickets Here</span>
+                            <h2>
+                                Search For Any Amazing
+                            </h2>
+                            <a href="#" class="primary-btn">More Events</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-5">
+                        <img src="img/hero-right.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+        <!-- Counter Section Begin -->
+        <section class="counter-section"  style="background-color: #717171">
+            <div class="container"  style="background-color: #717171">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="counter-text">
+                            <h3>
+                                ****
+                                <br>
+                                Online Event Ticket
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="cd-timer" id="">
+                            <div class="cd-item">
+                                <span>0</span>
+                                <p>Days</p>
+                            </div>
+                            <div class="cd-item">
+                                <span>0</span>
+                                <p>Hours</p>
+                            </div>
+                            <div class="cd-item">
+                                <span>0</span>
+                                <p>Minutes</p>
+                            </div>
+                            <div class="cd-item">
+                                <span>0</span>
+                                <p>Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Counter Section End -->
+        <!-- Home About Section Begin -->
+        <section class="home-about-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ha-pic">
+                            <img src="" alt="Big-Banner">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ha-text pt-2">
+                            <h2 class="mt-1" id="about-section">About </h2>
+                            <p>
+                                description
+                            </p>
+                            <a href="#" class="ha-btn">Get your own event</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home About Section End -->
+        <!-- Schedule Section Begin -->
+        <section class="schedule-section spad">
+            <div class="container text-center">
+                <h5 style="font-weight: 700;">*****</h5>
+            </div>
+        </section>
+        <!-- Schedule Section End -->
+        <!-- Pricing Section Begin -->
+        <section class="pricing-section set-bg spad" data-setbg="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>What we offer at AfroSocialite</h2>
+                            <!-- <p>Get your event ticket plan</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    
+                    <div class="col-lg-4 col-md-8">
+                        <div class="price-item top-rated">
+                            <div class="tr-tag">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h4> Events</h4>
+                            <p style="padding: 17px;">
+                                *******
+                            </p>
+                            <a href="#" class="price-btn">
+                                More
+                                <span class="arrow_right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Section End -->
+        <!-- latest BLog Section Begin -->
+        <section class="latest-blog spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title" id="events-section">
+                            <h2>Upcoming Events</h2>
+                            <p>Stay updated with the upcoming events tailored for Nigerians in Diaspora</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="latest-item set-bg" data-setbg="img/beach3.jfif" style="background-color: rgba(0, 0, 0, 0.5);">
+                            <div class="li-tag">Online Event</div>
+                            <div class="li-text">
+                                <h5>
+                                    <a href="#">******</a>
+                                </h5>
+                                <span>
+                                    <i class="fa fa-clock-o"></i>
+                                    ******
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- latest BLog Section End -->
+        <!-- Newslatter Section Begin -->
+        <section class="newslatter-section">
+            <div class="container">
+                <div class="newslatter-inner set-bg" data-setbg="">
+                    <div class="ni-text">
+                        <h3 style="color: #000;">Subscribe Newsletter</h3>
+                        <p>Get More</p>
+                    </div>
+                    <form action="#" class="ni-form">
+                        <input type="text" placeholder="enter email">
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Newslatter Section End -->
+       <!--Scroll To Top-->
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+                                    
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        const targetId = this.getAttribute('href').substr(1); // Get the target section's ID
+
+                        const targetSection = document.getElementById(targetId);
+
+                        if (targetSection) {
+                            // Calculate the offset for smooth scrolling
+                            const offset = targetSection.getBoundingClientRect().top;
+
+                            window.scrollTo({
+                                top: offset + window.scrollY, // Add current scroll position
+                                behavior: 'smooth' // Smooth scrolling effect
+                            });
+                        }
+                    });
+                });
+
+                document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector(".header-section");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", function () {
+    // Show or hide the button based on scroll position
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", function () {
+    // Smooth scroll to the top of the page
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
+        </script>
+    </body>
+
+<!-- Mirrored from afrosocialite.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2023 19:29:29 GMT -->
+</html>
